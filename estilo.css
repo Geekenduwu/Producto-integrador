@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Open Sans', sans-serif;
+}
+
+body {
+	background-image: url(img/fondo.jpg);
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+nav {
+	max-width: 1000px;
+	margin: auto;
+	background-color: #2d7e72;
+	font-size: 20px;
+	margin-top: 2%;
+	border-radius: 10px 10px 0px 0px;
+	align-items: center;
+}
+
+.menu-horizontal {
+	list-style: none;
+	display: flex;
+	justify-content: space-around;
+	position: relative;
+	text-align: center;
+	align-items: center;
+}
+
+.menu-horizontal > li {
+	position: relative;
+}
+
+.menu-horizontal > li > a {
+	display: block;
+	padding: 15px 20px;
+	color: white;
+	text-decoration: none;
+}
+
+.menu-horizontal > li:hover {
+	background-color: rgb(52, 168, 179);
+	border-radius: 5px;
+}
+
+.menu-vertical {
+	position: absolute;
+	display: none;
+	list-style: none;
+	width: 200px;
+	background-color: rgba(4, 31, 52, 0.7);
+	border-radius: 5px;
+	text-align: center;
+	top: 100%;
+	left: 0;
+	
+}
+
+.menu-horizontal li:hover .menu-vertical {
+	display: block;
+}
+
+.menu-vertical li {
+	position: relative;
+}
+
+.menu-vertical li:hover {
+	background-color: rgb(21, 59, 120);
+	border-radius: 5px;
+}
+
+.menu-vertical li a {
+	display: block;
+	color: white;
+	text-decoration: none;
+	padding: 15px 15px 15px 20px;
+}
+
+.submenu-vertical {
+	position: absolute;
+	display: none;
+	left: 100%;
+	top: 0;
+	list-style: none;
+	width: 180px;
+	background-color: rgba(0, 50, 90, 0.9);
+	border-radius: 5px;
+	text-align: center;
+	align-items: center;
+}
+
+.menu-vertical li:hover .submenu-vertical {
+	display: block;
+}
+
+.submenu-vertical li a {
+	padding: 10px 20px;
+	color: white;
+	text-decoration: none;
+}
+
+.submenu-vertical li:hover {
+	background-color: rgb(0, 80, 150);
+	border-radius: 5px;
+}
+
+#html {
+	margin: auto;
+	padding: 20px;
+	max-width: 1000px;
+	background: white;
+	border-radius: 0px 0px 10px 10px;
+	text-align: center;
+}
